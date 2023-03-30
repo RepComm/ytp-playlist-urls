@@ -7,3 +7,5 @@ Also provides a handy Copy button, which copies rich text format of the table
 Pastable into any spreadsheet
 
 Source code at: https://github.com/RepComm/ytp-playlist-urls
+
+![img](./example.png)
