@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "ytp-playlist-urls",
+  "description": "Visit a youtube.com/playlist, 1-click copy the video URLs as a 1 column table",
+  "version": "1.0",
+  "action": {
+    "default_popup": "main.html",
+    "default_icon": "main.icon.png"
+  },
+  "icons": {
+    "32": "main.icon.png"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://www.youtube.com/playlist"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/playlist*"
+      ],
+      "js": [
+        "main.js"
+      ]
+    }
+  ]
+}
